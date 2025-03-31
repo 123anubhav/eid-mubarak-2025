@@ -1,8 +1,7 @@
-<!--   Created By : Riya
+<!--   Created By : Anubhav
        Created On : 31-Mar-2025
        
-       And huge thanks to Joy bro for helping-->
-
+       -->
 
 
        <!DOCTYPE html>
@@ -52,16 +51,21 @@
          <div class="wish-box" id="wishBox" onclick="generateWish()">Click Me</div>
          <p class="wish-text" id="wishText"></p>
          <audio
-           src="https://www.dropbox.com/scl/fi/lubmricnsso6w1yqbkmm6/audio-8314c46fd3.MP3?rlkey=ydfz8f2svxfi88ca6yrqwgia1&st=2w3rcaax&raw=1"
-           id="music" loop>
+           src="https://www.dropbox.com/scl/fi/lubmricnsso6w1yqbkmm6/audio-8314c46fd3.MP3?rlkey=ydfz8f2svxfi88ca6yrqwgia1&raw=1"
+           id="music"
+           preload="auto"
+           type="audio/mpeg"
+           loop>
          </audio>
+         <div class="music-control" onclick="toggleMusic()" id="musicControl">
+             <span class="music-icon">🎵</span>
+             <span class="music-text">Play Music</span>
+         </div>
          <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
          </script>
          <script src="script.js"></script>
-
-         
-       </body>
        
+       </body>
        
        <footer style="
            position: fixed;
